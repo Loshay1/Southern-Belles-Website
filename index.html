@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Southern Belle's Pancake House | Carpentersville, IL | Breakfast and Lunch</title>
+  <meta name="description" content="Southern Belle's Pancake House in Carpentersville, IL. Open 7 days a week. Homemade BoNuts, pancakes, skillets, benedicts and more. Dine-in, takeout, delivery. Video gaming cafe.">
+  <meta name="keywords" content="pancakes Carpentersville IL, breakfast Carpentersville, diner near me, Southern Belles, BoNuts, brunch Carpentersville Illinois">
+  <link rel="canonical" href="https://southernbellespancakes.com/site/carpentersville-il/">
+
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Southern Belle's Pancake House - Carpentersville, IL">
+  <meta property="og:description" content="Homemade southern comfort breakfast and lunch. Open 7 days, 6 AM to 3 PM. Famous BoNuts, pancakes, skillets and more.">
+  <meta property="og:image" content="assets/images/hero_bonuts.jpg">
+  <meta property="og:url" content="https://southernbellespancakes.com/site/carpentersville-il/">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@SBPancakes">
+  <meta name="twitter:title" content="Southern Belle's Pancake House - Carpentersville, IL">
+  <meta name="twitter:description" content="Homemade southern comfort breakfast and lunch. Famous BoNuts, pancakes, skillets and more.">
+  <meta name="twitter:image" content="assets/images/hero_bonuts.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Southern Belle's Pancake House",
+    "image": "assets/images/hero_bonuts.jpg",
+    "url": "https://southernbellespancakes.com/site/carpentersville-il/",
+    "telephone": "+1-224-699-9959",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "152 S. Western Ave",
+      "addressLocality": "Carpentersville",
+      "addressRegion": "IL",
+      "postalCode": "60110",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.1178,
+      "longitude": -88.2573
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "06:00",
+        "closes": "15:00"
+      }
+    ],
+    "servesCuisine": ["American", "Breakfast", "Brunch", "Southern"],
+    "priceRange": "$$",
+    "menu": "https://southernbellespancakes.com/site/menu/",
+    "acceptsReservations": "false",
+    "sameAs": [
+      "https://www.facebook.com/southernbellescarpentersville",
+      "https://x.com/SBPancakes",
+      "https://www.instagram.com/southernbellespancakes"
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'sb-blue': '#3b8ced',
+            'sb-blue-dark': '#1a3a6b',
+            'sb-blue-light': '#e8f1fc',
+            'sb-cream': '#fdf8f0',
+            'sb-warm': '#f5efe6',
+            'sb-gold': '#c8943e',
+            'sb-gold-light': '#f0d9a8',
+          },
+          fontFamily: {
+            'display': ['"Playfair Display"', 'Georgia', 'serif'],
+            'body': ['"Inter"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .menu-tab.active { border-color: #3b8ced; color: #1a3a6b; background-color: #e8f1fc; }
+    .menu-category { display: none; }
+    .menu-category.active { display: block; }
+    .hero-overlay { background: linear-gradient(to bottom, rgba(26,58,107,0.7) 0%, rgba(26,58,107,0.3) 40%, rgba(26,58,107,0.6) 100%); }
+    .nav-scrolled { background-color: rgba(26,58,107,0.97); backdrop-filter: blur(8px); box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="#hero" class="flex items-center gap-3">
+          <img src="assets/images/logo_wide.png" alt="Southern Belle's Pancake House" class="h-10 md:h-12">
+        </a>
+        <div class="hidden lg:flex items-center gap-6">
+          <a href="#about" class="text-white/90 hover:text-white text-sm font-medium transition-colors">About</a>
+          <a href="#specialties" class="text-white/90 hover:text-white text-sm font-medium transition-colors">Specialties</a>
+          <a href="#menu" class="text-white/90 hover:text-white text-sm font-medium transition-colors">Menu</a>
+          <a href="catering.html" class="text-white/90 hover:text-white text-sm font-medium transition-colors">Catering</a>
+          <a href="#gaming" class="text-white/90 hover:text-white text-sm font-medium transition-colors">Gaming</a>
+          <a href="#location" class="text-white/90 hover:text-white text-sm font-medium transition-colors">Location</a>
+          <a href="#contact" class="text-white/90 hover:text-white text-sm font-medium transition-colors">Contact</a>
+          <a href="https://order.toasttab.com/online/southern-belles-carpentersville" target="_blank" rel="noopener"
+             class="bg-sb-gold hover:bg-yellow-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-lg">
+            Order Online
+          </a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden text-white p-2" aria-label="Open menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-sb-blue-dark/97 backdrop-blur-md border-t border-white/10">
+      <div class="px-4 py-4 space-y-2">
+        <a href="#about" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">About</a>
+        <a href="#specialties" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Specialties</a>
+        <a href="#menu" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Menu</a>
+        <a href="catering.html" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Catering</a>
+        <a href="#gaming" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Gaming</a>
+        <a href="#location" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Location</a>
+        <a href="#contact" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Contact</a>
+        <a href="https://order.toasttab.com/online/southern-belles-carpentersville" target="_blank" rel="noopener"
+           class="block text-center bg-sb-gold hover:bg-yellow-600 text-white px-5 py-3 rounded-full font-semibold mt-3">
+          Order Online
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="relative min-h-[90vh] md:min-h-screen flex items-center justify-center">
+    <div class="absolute inset-0">
+      <img src="assets/images/hero_bonuts.jpg" alt="Southern Belle's signature BoNuts" class="w-full h-full object-cover">
+      <div class="hero-overlay absolute inset-0"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 leading-tight">
+        Southern Belle's<br><span class="text-sb-gold-light">Pancake House</span>
+      </h1>
+      <p class="text-white/90 text-lg md:text-xl font-light mb-2">Carpentersville, IL</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-white/80 text-sm md:text-base mb-8">
+        <span>Open 7 Days a Week</span>
+        <span class="hidden sm:inline">|</span>
+        <span>6:00 AM - 3:00 PM</span>
+        <span class="hidden sm:inline">|</span>
+        <span>Gaming Cafe 3-10 PM</span>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://order.toasttab.com/online/southern-belles-carpentersville" target="_blank" rel="noopener"
+           class="bg-sb-gold hover:bg-yellow-600 text-white px-8 py-3.5 rounded-full text-lg font-semibold transition-all shadow-xl hover:shadow-2xl hover:scale-105">
+          Order Online
+        </a>
+        <a href="#menu"
+           class="border-2 border-white/70 hover:border-white text-white px-8 py-3.5 rounded-full text-lg font-semibold transition-all hover:bg-white/10">
+          View Menu
+        </a>
+      </div>
+      <a href="tel:+12246999959" class="inline-block mt-6 text-white/80 hover:text-white transition-colors text-sm">
+        Call: (224) 699-9959
+      </a>
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-24 bg-sb-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div>
+          <p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-3">Welcome to</p>
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-sb-blue-dark mb-6">Southern Belle's<br>Pancake House</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">
+            Here at Southern Belle's, we strive to provide you a wholesome breakfast and lunch. We promise to do our best to prepare your meal just the way you like it using the freshest ingredients seasonally available.
+          </p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">Sit back and let us do the dishes!</p>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Known for our homemade <strong>BoNuts</strong> and fresh, innovative southern comfort food for breakfast, brunch, and lunch. Gluten-free and vegan options available.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#menu" class="bg-sb-blue hover:bg-sb-blue-dark text-white px-6 py-3 rounded-full font-semibold transition-colors">View Our Menu</a>
+            <a href="https://order.toasttab.com/online/southern-belles-carpentersville" target="_blank" rel="noopener"
+               class="border-2 border-sb-blue text-sb-blue hover:bg-sb-blue hover:text-white px-6 py-3 rounded-full font-semibold transition-all">Order Online</a>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="assets/images/benedict.jpg" alt="Eggs Benedict at Southern Belle's" class="rounded-2xl shadow-2xl w-full object-cover aspect-square">
+          <div class="absolute -bottom-4 -left-4 bg-sb-blue text-white px-5 py-3 rounded-xl shadow-lg hidden md:block">
+            <p class="font-display text-lg font-bold">As Seen On</p>
+            <p class="text-sm text-white/80">WGN 9 and FOX 32</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Bar -->
+  <section class="bg-sb-blue-dark py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+        <div><p class="text-2xl md:text-3xl font-display font-bold">7</p><p class="text-white/70 text-sm">Days a Week</p></div>
+        <div><p class="text-2xl md:text-3xl font-display font-bold">6 AM</p><p class="text-white/70 text-sm">Doors Open</p></div>
+        <div><p class="text-2xl md:text-3xl font-display font-bold">80+</p><p class="text-white/70 text-sm">Menu Items</p></div>
+        <div><p class="text-2xl md:text-3xl font-display font-bold">GF + V</p><p class="text-white/70 text-sm">Options Available</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties -->
+  <section id="specialties" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-3">Our Favorites</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-sb-blue-dark">House Specialties</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-square">
+          <img src="assets/images/bonuts.jpg" alt="Signature BoNuts" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="text-white font-display text-xl font-bold">BoNuts</h3>
+            <p class="text-white/70 text-xs mt-1">Fried biscuit donuts with mascarpone and chocolate</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-square">
+          <img src="assets/images/wrecker.jpg" alt="Morning Wrecker" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="text-white font-display text-xl font-bold">Morning Wrecker</h3>
+            <p class="text-white/70 text-xs mt-1">Biscuit, hash browns, chicken, eggs and sausage gravy</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-square">
+          <img src="assets/images/skillet.jpg" alt="Signature Skillets" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="text-white font-display text-xl font-bold">Skillets</h3>
+            <p class="text-white/70 text-xs mt-1">11 signature skillets with biscuit and eggs</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-square">
+          <img src="assets/images/avocado_toast.jpg" alt="Avocado Toast" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="text-white font-display text-xl font-bold">Avocado Toast</h3>
+            <p class="text-white/70 text-xs mt-1">Sriracha aioli on multigrain with poached eggs</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-square col-span-2 md:col-span-1">
+          <img src="assets/images/pancakes.jpg" alt="Signature Pancakes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4">
+            <h3 class="text-white font-display text-xl font-bold">Pancakes</h3>
+            <p class="text-white/70 text-xs mt-1">10 varieties including Camp-Fire and CinnaBomb</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="py-16 md:py-24 bg-sb-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-3">What We Serve</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-sb-blue-dark mb-3">Our Menu</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Fresh, innovative southern comfort food made from scratch daily.</p>
+        <a href="Southern-Belle-Menu-WEB_0425.pdf" target="_blank" class="inline-block mt-3 text-sb-blue hover:text-sb-blue-dark text-sm underline">Download printable menu (PDF)</a>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="flex flex-wrap justify-center gap-2 mb-8">
+        <button class="menu-tab active px-4 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 transition-all" data-tab="breakfast">Breakfast</button>
+        <button class="menu-tab px-4 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-500 transition-all" data-tab="biscuits">Biscuits and Donuts</button>
+        <button class="menu-tab px-4 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-500 transition-all" data-tab="eggs">Eggs and More</button>
+        <button class="menu-tab px-4 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-500 transition-all" data-tab="lunch">Lunch</button>
+        <button class="menu-tab px-4 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-500 transition-all" data-tab="sandwiches">Sandwiches</button>
+        <button class="menu-tab px-4 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-500 transition-all" data-tab="salads">Salads and Wraps</button>
+        <button class="menu-tab px-4 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-500 transition-all" data-tab="healthy">Healthy and GF</button>
+        <button class="menu-tab px-4 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 text-gray-500 transition-all" data-tab="sides">Sides</button>
+      </div>
+
+      <!-- BREAKFAST -->
+      <div class="menu-category active" id="tab-breakfast">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/apple_pancakes.jpg" alt="Apple Butter Pancakes" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Apple Pancakes</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/strawberry_cheesecake.jpg" alt="Strawberry Cheesecake Pancakes" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Cheesecake</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/belles_bliss.jpg" alt="Belle's Bliss Pancakes" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Belle's Bliss</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/waffles.jpg" alt="Sugared Pecan Waffle" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Sugared Pecan</p></div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Crepes</h3>
+            <div class="space-y-3 mt-4">
+              <div><p class="font-semibold text-gray-800">Crepes</p><p class="text-sm text-gray-500">Add choice of fresh blueberry, fresh strawberry, fresh banana, or warm strawberry, blueberry, or apple compote</p></div>
+              <div><p class="font-semibold text-gray-800">Cobbler</p><p class="text-sm text-gray-500">Topped with fresh strawberry, fresh blueberry, peach and caramelized brown sugar oat crumble</p></div>
+              <div><p class="font-semibold text-gray-800">Nutella</p><p class="text-sm text-gray-500">Filled with Nutella, topped with fresh strawberry, fresh banana, pecans and chocolate syrup</p></div>
+              <div><p class="font-semibold text-gray-800">Blintz</p><p class="text-sm text-gray-500">Filled with sweetened cottage cheese and sour cream mixture with choice of fruit</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Waffles</h3>
+            <p class="text-xs text-gray-400 mb-4">Dusted with powder sugar; served with warm syrup and whipped butter</p>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">"The Original"</p><p class="text-sm text-gray-500">Add fresh blueberry, fresh strawberry, fresh banana, or warm compote</p></div>
+              <div><p class="font-semibold text-gray-800">Sugared Pecan</p><p class="text-sm text-gray-500">Pecan waffle, topped with fresh bananas and sugared pecans</p></div>
+              <div><p class="font-semibold text-gray-800">Waffle Breakfast</p><p class="text-sm text-gray-500">Two eggs any style, bacon or sausage and a waffle</p></div>
+              <div><p class="font-semibold text-gray-800">Hot Honey Chicken and Waffle</p><p class="text-sm text-gray-500">Bacon infused waffle with a hot honey glazed fried boneless chicken thigh and a sunny side up egg</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">French Toast</h3>
+            <p class="text-xs text-gray-400 mb-4">Dusted with powder sugar; served with warm syrup and whipped butter</p>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">Plain and Simple</p><p class="text-sm text-gray-500">Add fresh blueberry, strawberry, banana, or warm compote</p></div>
+              <div><p class="font-semibold text-gray-800">French Lady</p><p class="text-sm text-gray-500">Two eggs any style, bacon or sausage and French toast</p></div>
+              <div><p class="font-semibold text-gray-800">Cinnamon Swirl</p><p class="text-sm text-gray-500">Topped with fresh bananas, icing and cinnamon sugar</p></div>
+              <div><p class="font-semibold text-gray-800">Caramelized Bread Pudding</p><p class="text-sm text-gray-500">Bread pudding French toast, topped with bruled bananas, pecans, caramel, and whip cream</p></div>
+              <div><p class="font-semibold text-gray-800">Stuffed Strawberry</p><p class="text-sm text-gray-500">Stuffed with house sweet strawberry cream cheese, topped with strawberry compote and whip cream</p></div>
+              <div class="bg-sb-blue-light rounded-lg p-3 border border-sb-blue/20"><p class="font-semibold text-sb-blue-dark">French Toast Overload</p><p class="text-sm text-gray-600">Stuffed with house sweet cream cheese, topped with fresh bananas, blueberries, strawberries, caramel, sugared pecans and whip cream</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm lg:col-span-3">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Pancakes</h3>
+            <p class="text-xs text-gray-400 mb-4">Dusted with powder sugar; served with warm syrup and whipped butter</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div><p class="font-semibold text-gray-800">Buttermilk</p><p class="text-sm text-gray-500">Add choice of fresh blueberry, strawberry, banana, or warm compote</p></div>
+              <div><p class="font-semibold text-gray-800">CinnaBomb</p><p class="text-sm text-gray-500">Filled with cinnamon roll brown sugar, topped with icing and cinnamon sugar</p></div>
+              <div><p class="font-semibold text-gray-800">Belle's Bliss</p><p class="text-sm text-gray-500">Granola pancakes layered with sweet cream cheese, warm compote, whipped cream</p></div>
+              <div><p class="font-semibold text-gray-800">Strawberry Cheesecake</p><p class="text-sm text-gray-500">Layered with sweet cream cheese, strawberry compote, cheesecake bites, and whip cream</p></div>
+              <div><p class="font-semibold text-gray-800">The Woodsman</p><p class="text-sm text-gray-500">Two buttermilk pancakes with ham, two bacon, two sausage link and two eggs any style</p></div>
+              <div><p class="font-semibold text-gray-800">Banana Puddin' Brulee</p><p class="text-sm text-gray-500">Buttermilk pancake wafers layered with nilla wafers, house made banana pudding, and fresh banana</p></div>
+              <div><p class="font-semibold text-gray-800">2x2x2</p><p class="text-sm text-gray-500">Two eggs any style, bacon or sausage and two buttermilk pancakes</p></div>
+              <div><p class="font-semibold text-gray-800">Camp-Fire</p><p class="text-sm text-gray-500">Chocolate chip pancakes with chocolate syrup, marshmallow sauce, whipped cream and graham crackers</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BISCUITS -->
+      <div class="menu-category" id="tab-biscuits">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/bonuts.jpg" alt="BoNuts" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">BoNuts</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/wrecker.jpg" alt="Morning Wrecker" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Morning Wrecker</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/belly_buster_alt.jpg" alt="Belly Buster Biscuit" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Belly Buster</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/banana_pudding.jpg" alt="Banana Pudding Parfait" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Banana Pudding</p></div>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-4">Biscuit Craze</h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-sb-gold/5 border border-sb-gold/20 rounded-lg p-3"><p class="font-semibold text-gray-800">BoNuts</p><p class="text-sm text-gray-500">Fried biscuit donuts tossed in cinnamon sugar, served with blueberry mascarpone and chocolate syrup</p></div>
+            <div><p class="font-semibold text-gray-800">Basket of Biscuits</p><p class="text-sm text-gray-500">Served with honey and apple butter</p></div>
+            <div><p class="font-semibold text-gray-800">Morning Wrecker</p><p class="text-sm text-gray-500">Drop biscuit with hash browns, cheesy eggs, fried chicken, smoked bacon, pickled cherry peppers, caramelized onions and sausage gravy</p></div>
+            <div><p class="font-semibold text-gray-800">Stacked Biscuit</p><p class="text-sm text-gray-500">Drop biscuit with hash browns, cheesy eggs, sausage gravy and choice of one meat, garnished with bacon and cheddar</p></div>
+            <div><p class="font-semibold text-gray-800">Country Style Biscuits and Gravy</p><p class="text-sm text-gray-500">Served with choice of hash browns, fruit, or grits. With eggs $15.99</p></div>
+            <div><p class="font-semibold text-gray-800">The Dirty Bird</p><p class="text-sm text-gray-500">Drop biscuit with hash browns, cheesy eggs, hot honey fried boneless chicken thigh, crumbled bacon, and cajun cream sauce</p></div>
+            <div><p class="font-semibold text-gray-800">"Un-Porking Believable" Biscuit</p><p class="text-sm text-gray-500">Drop biscuit with hash browns, fried pork tenderloin, pulled pork, bacon, cheesy eggs and chorizo gravy</p></div>
+            <div><p class="font-semibold text-gray-800">Belly Buster Biscuit</p><p class="text-sm text-gray-500">Drop biscuit with hash browns, fried chicken, pork belly, sausage patties, cheesy eggs and sausage gravy</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EGGS AND MORE -->
+      <div class="menu-category" id="tab-eggs">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/spanish_skillet.jpg" alt="Spanish Skillet" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Spanish Skillet</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/debutante_skillet.jpg" alt="The Debutante Skillet" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">The Debutante</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/salsa_omelette.jpg" alt="Salsa Omelette" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Omelette</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/benedict.jpg" alt="Eggs Benedict" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Benedicts</p></div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Signature Skillets</h3>
+            <p class="text-xs text-gray-400 mb-4">Served with biscuit, hash browns, two eggs and toast or pancakes</p>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">Garden</p><p class="text-sm text-gray-500">Zucchini, mushroom, spinach, onion, green pepper, tomato and mozzarella</p></div>
+              <div><p class="font-semibold text-gray-800">"The Debutante"</p><p class="text-sm text-gray-500">Chicken sausage, kale, mushroom, onion and mozzarella</p></div>
+              <div><p class="font-semibold text-gray-800">Irishman's</p><p class="text-sm text-gray-500">House made corned beef hash and Swiss cheese</p></div>
+              <div><p class="font-semibold text-gray-800">Skirt Steak</p><p class="text-sm text-gray-500">Skirt steak, mushroom, onion, green pepper and mozzarella</p></div>
+              <div><p class="font-semibold text-gray-800">Southern Belle's</p><p class="text-sm text-gray-500">Ham, bacon, sausage, onion, green pepper, mozzarella and cheddar</p></div>
+              <div><p class="font-semibold text-gray-800">Hotlanta</p><p class="text-sm text-gray-500">Smoked sausage, chicken, onion, jalapeno, cheddar and pepper jack</p></div>
+              <div><p class="font-semibold text-gray-800">Pork Popper</p><p class="text-sm text-gray-500">Green pepper, onions, mozzarella, bacon, pork popper with chipotle aioli</p></div>
+              <div><p class="font-semibold text-gray-800">Farmer's</p><p class="text-sm text-gray-500">Sausage, ham, green peppers, onions, mozzarella and cheddar, topped with sausage gravy</p></div>
+              <div><p class="font-semibold text-gray-800">Pork Belly</p><p class="text-sm text-gray-500">Smoked pork belly, bacon, jalapenos, onions, cheddar, drizzled with BBQ ranch</p></div>
+              <div><p class="font-semibold text-gray-800">Spanish</p><p class="text-sm text-gray-500">Chicken chorizo, onion, jalapeno, tomato, avocado and pepper jack</p></div>
+              <div><p class="font-semibold text-gray-800">Country-Time</p><p class="text-sm text-gray-500">Fried chicken breast, bacon, onion, green pepper, sausage gravy, mozzarella and cheddar</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Omelettes</h3>
+            <p class="text-xs text-gray-400 mb-4">Served with hash browns, fruit, or grits and toast or pancakes</p>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">Chicken</p><p class="text-sm text-gray-500">Chicken, bacon, tomato, avocado and jalapeno</p></div>
+              <div><p class="font-semibold text-gray-800">Salsa</p><p class="text-sm text-gray-500">Chicken chorizo, onion, jalapeno, tomato, cilantro and avocado with house made salsa</p></div>
+              <div><p class="font-semibold text-gray-800">Southern Belle's</p><p class="text-sm text-gray-500">Ham, bacon, sausage, onion and green pepper</p></div>
+              <div><p class="font-semibold text-gray-800">Grumpy Goat</p><p class="text-sm text-gray-500">Bacon, pickled cherry peppers, spinach, mushroom, goat cheese</p></div>
+              <div><p class="font-semibold text-gray-800">The Biscuit</p><p class="text-sm text-gray-500">Sausage, biscuit and cheddar, topped with sausage gravy</p></div>
+              <div><p class="font-semibold text-gray-800">Gouda</p><p class="text-sm text-gray-500">Bacon, tomato, avocado and gouda</p></div>
+              <div><p class="font-semibold text-gray-800">Vegetable</p><p class="text-sm text-gray-500">Broccoli, spinach, mushroom, onion, tomato and zucchini</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Benedicts</h3>
+            <p class="text-xs text-gray-400 mb-4">Served with choice of hash browns, fruit, or grits</p>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">Country</p><p class="text-sm text-gray-500">Biscuit, sausage patties, poached eggs and sausage gravy</p></div>
+              <div><p class="font-semibold text-gray-800">Avocado Smashed Benny</p><p class="text-sm text-gray-500">English muffin, smashed avocado, tomato, fresh mozzarella, poached eggs and basil pesto</p></div>
+              <div><p class="font-semibold text-gray-800">Shamrock</p><p class="text-sm text-gray-500">English muffin, house made corn beef hash, poached eggs and hollandaise</p></div>
+              <div><p class="font-semibold text-gray-800">Crabby</p><p class="text-sm text-gray-500">English muffin, crab cakes, spinach, pickled cherry peppers, poached egg, cajun cream sauce</p></div>
+              <div><p class="font-semibold text-gray-800">Eggs Benedict</p><p class="text-sm text-gray-500">English muffin, Canadian bacon, poached eggs and hollandaise</p></div>
+              <div><p class="font-semibold text-gray-800">Pimento</p><p class="text-sm text-gray-500">English muffin, pimento cheese, fried green tomato, poached egg, cajun cream sauce</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm lg:col-span-3">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-4">Eggs and More</h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div><p class="font-semibold text-gray-800">2 Eggs Any Style</p><p class="text-sm text-gray-500">Hash browns, fruit or grits and toast or pancakes with choice of meat</p></div>
+              <div><p class="font-semibold text-gray-800">Corned Beef Hash</p><p class="text-sm text-gray-500">House made with two eggs any style, hash browns, fruit, or grits</p></div>
+              <div><p class="font-semibold text-gray-800">Breakfast Sandwich</p><p class="text-sm text-gray-500">American cheese, eggs and bacon or sausage on multigrain toast</p></div>
+              <div><p class="font-semibold text-gray-800">Belly Up</p><p class="text-sm text-gray-500">BBQ rubbed hot honey glazed pork belly with two eggs any style</p></div>
+              <div><p class="font-semibold text-gray-800">Corn Bread Sliders</p><p class="text-sm text-gray-500">Two mini grilled cornbreads with cheesy eggs, bacon, green onion and chipotle aioli</p></div>
+              <div><p class="font-semibold text-gray-800">Steak and Eggs</p><p class="text-sm text-gray-500">10 oz. broiled steak with two eggs any style and hash browns</p></div>
+              <div><p class="font-semibold text-gray-800">Fried Chicken and Eggs</p><p class="text-sm text-gray-500">Breaded fried chicken breast, biscuit, sausage gravy and two eggs</p></div>
+              <div><p class="font-semibold text-gray-800">Country Fried Steak and Eggs</p><p class="text-sm text-gray-500">Country fried steak, biscuit, sausage gravy and two eggs</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LUNCH -->
+      <div class="menu-category" id="tab-lunch">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/breakfast_tacos.jpg" alt="Breakfast Tacos" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Breakfast Tacos</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/chilaquiles.jpg" alt="Chilaquiles" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Chilaquiles</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/shrimp_grits.jpg" alt="Shrimp and Grits" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Shrimp and Grits</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/ranchero_burrito.jpg" alt="Ranchero Burrito" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Ranchero Burrito</p></div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-4">Lunchtime</h3>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">Half and Half</p><p class="text-sm text-gray-500">Choice of half sandwich: smoked turkey, ham, corn beef or grilled cheese with soup or fruit</p></div>
+              <div><p class="font-semibold text-gray-800">Country Platter</p><p class="text-sm text-gray-500">Country fried steak, pork fritter, or fried chicken in gravy with mashed potatoes and vegetables</p></div>
+              <div><p class="font-semibold text-gray-800">Roscoe's Catfish</p><p class="text-sm text-gray-500">2 fresh catfish filets, breaded and fried with tartar sauce, fries and biscuit</p></div>
+              <div class="bg-sb-gold/5 border border-sb-gold/20 rounded-lg p-3"><p class="font-semibold text-gray-800">Gumbo-laya (Spicy Stew)</p><p class="text-sm text-gray-500">Chicken, shrimp, andouille sausage, carrots, red peppers and onion over white rice with green onion</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm lg:col-span-2">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-4">SB House Specialties</h3>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div><p class="font-semibold text-gray-800">Eggy-Waffle Sandwich</p><p class="text-sm text-gray-500">Two sugar pearl waffles, filled with cheesy eggs and choice of meat</p></div>
+              <div><p class="font-semibold text-gray-800">Georgia Catfish and Cheddar Grits</p><p class="text-sm text-gray-500">Creamy cheddar grits with bacon, mushroom, jalapeno, cajun cream sauce and two eggs</p></div>
+              <div><p class="font-semibold text-gray-800">Chilaquiles</p><p class="text-sm text-gray-500">Fried corn tortillas with spicy red salsa, cheese, crema, chorizo, jalapeno, avocado and two eggs</p></div>
+              <div><p class="font-semibold text-gray-800">"South of the Border" Fried Chicken</p><p class="text-sm text-gray-500">Fried chicken breast, drop biscuit, scallions, chorizo, sriracha aioli and two eggs</p></div>
+              <div><p class="font-semibold text-gray-800">Breakfast Tacos</p><p class="text-sm text-gray-500">Corn tortillas with eggs, chicken chorizo, tomato, sriracha aioli, pico de gallo and pepper jack</p></div>
+              <div><p class="font-semibold text-gray-800">Shrimp and Grits</p><p class="text-sm text-gray-500">Creamy grits with shrimp, bacon, jalapeno, mushroom, cajun cream sauce and two eggs</p></div>
+              <div><p class="font-semibold text-gray-800">Ranchero Breakfast Burrito</p><p class="text-sm text-gray-500">Flour tortilla with eggs, chicken chorizo, onion, jalapeno, tomato, black beans and grilled corn</p></div>
+              <div><p class="font-semibold text-gray-800">Brisket Bowl</p><p class="text-sm text-gray-500">Tater tots with jack cheese sauce, caramelized beef brisket in BBQ, grilled onions, bell peppers and cheesy eggs</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Burgers</h3>
+            <p class="text-xs text-gray-400 mb-4">Served with soup and choice of fries, fruit, chips, or coleslaw</p>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">House Burger</p><p class="text-sm text-gray-500">Lettuce, tomato, red onion and choice of cheese on a brioche bun</p></div>
+              <div><p class="font-semibold text-gray-800">The Melt</p><p class="text-sm text-gray-500">Classic patty melt with caramelized onions, American and Swiss cheese on grilled marble rye</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SANDWICHES -->
+      <div class="menu-category" id="tab-sandwiches">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/nashville_hot.jpg" alt="Nashville Hot Chicken Sandwich" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Nashville Hot</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/fried_green_blt.jpg" alt="Fried Green Tomato BLT" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">FG Tomato BLT</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/hot_chicken_biscuit.jpg" alt="Hot Chicken and Pickles Sandwich" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Hot Chicken</p></div>
+          <div class="relative rounded-xl overflow-hidden aspect-square"><img src="assets/images/fat_belly_grilled.jpg" alt="Fat Belly Grilled Cheese" class="w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><p class="absolute bottom-2 left-3 text-white font-display font-bold text-sm">Grilled Cheese</p></div>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Between the Bread</h3>
+          <p class="text-xs text-gray-400 mb-4">Served with soup and choice of fries, fruit, chips, or coleslaw</p>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div><p class="font-semibold text-gray-800">Cali Club</p><p class="text-sm text-gray-500">Turkey, avocado, bacon, tomato, American cheese and mayo on toasted white bread</p></div>
+            <div><p class="font-semibold text-gray-800">Fried Chicken</p><p class="text-sm text-gray-500">Buttermilk breaded chicken breast, lettuce, tomato, bacon, cheddar and mayo on ciabatta</p></div>
+            <div><p class="font-semibold text-gray-800">Reuben</p><p class="text-sm text-gray-500">Corn beef, sauerkraut, Swiss cheese and thousand island on grilled rye</p></div>
+            <div><p class="font-semibold text-gray-800">Fried Green Pimento BLT</p><p class="text-sm text-gray-500">Grilled sourdough with fried green tomatoes, pimento cheese, bacon, lettuce</p></div>
+            <div><p class="font-semibold text-gray-800">"Not Your Mom's Grilled Cheese"</p><p class="text-sm text-gray-500">Shaved ham, bacon, fried green tomato, smoked gouda and white cheddar</p></div>
+            <div><p class="font-semibold text-gray-800">Honey Butter Chicken Sandwich</p><p class="text-sm text-gray-500">Fried chicken in hot honey sauce, lettuce, tomato, sweet pickles on brioche</p></div>
+            <div><p class="font-semibold text-gray-800">The Cubano</p><p class="text-sm text-gray-500">BBQ pulled pork, shaved ham, white cheddar, mustard, mayo and sweet pickles on ciabatta</p></div>
+            <div><p class="font-semibold text-gray-800">Avondale Chicken Sandwich</p><p class="text-sm text-gray-500">Blackened chicken, candied bacon, fried green tomato, spinach, lemon aioli on sesame bread</p></div>
+            <div><p class="font-semibold text-gray-800">Nashville Hot Chicken Sandwich</p><p class="text-sm text-gray-500">Buttermilk fried chicken with Nashville hot sauce, coleslaw and pickles on brioche</p></div>
+            <div><p class="font-semibold text-gray-800">Tuna Melt</p><p class="text-sm text-gray-500">Grilled marble rye with tuna salad, tomato, cheddar cheese</p></div>
+            <div><p class="font-semibold text-gray-800">Hot Honey Chicken Thigh</p><p class="text-sm text-gray-500">Fried boneless thighs in hot honey sauce, lettuce, cherry peppers, bleu cheese on brioche</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SALADS AND WRAPS -->
+      <div class="menu-category" id="tab-salads">
+        <div class="relative rounded-2xl overflow-hidden mb-8 h-48 md:h-64">
+          <img src="assets/images/avocado_toast.jpg" alt="Fresh Salads and Wraps" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-sb-blue-dark/80 to-sb-blue-dark/30"></div>
+          <div class="absolute inset-0 flex items-center px-8">
+            <div><p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-1">Light and Fresh</p><h3 class="font-display text-3xl md:text-4xl font-bold text-white">Salads and Wraps</h3><p class="text-white/70 text-sm mt-2">Fresh greens, grilled proteins, and house-made dressings</p></div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Salads</h3>
+            <p class="text-xs text-gray-400 mb-4">Served with soup. All dressing on the side</p>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">Blackened Chicken</p><p class="text-sm text-gray-500">Mixed greens, blackened chicken, green peppers, bacon, tomato, avocado and bleu cheese dressing</p></div>
+              <div><p class="font-semibold text-gray-800">Chopped Greek Chicken</p><p class="text-sm text-gray-500">Chopped romaine, grilled chicken, tomato, cucumber, red onion, olives, feta and Greek dressing</p></div>
+              <div><p class="font-semibold text-gray-800">Sugared Pecan</p><p class="text-sm text-gray-500">Mixed greens, grilled chicken, sugared pecans, avocado, bacon, cheddar and honey mustard</p></div>
+              <div><p class="font-semibold text-gray-800">Texas Roadhouse</p><p class="text-sm text-gray-500">Mixed greens, grilled chicken, grilled corn, black beans, avocado, jalapeno, tortilla strips and buffalo ranch</p></div>
+              <div><p class="font-semibold text-gray-800">Country Cobb</p><p class="text-sm text-gray-500">Mixed greens, fried chicken breast, tomato, corn, avocado, boiled eggs, bacon and bleu cheese</p></div>
+              <div><p class="font-semibold text-gray-800">Southern Shrimp</p><p class="text-sm text-gray-500">Mixed greens, blackened shrimp, bacon, tomato, cucumber, red onion, egg, thousand island</p></div>
+              <div><p class="font-semibold text-gray-800">Autumn Bliss</p><p class="text-sm text-gray-500">Mixed greens, grilled chicken, fresh apple, mandarin orange, pecans, avocado, bleu cheese, raspberry vinaigrette</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-1">Wraps</h3>
+            <p class="text-xs text-gray-400 mb-4">Served with soup and choice of fries, fruit, chips, or coleslaw</p>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">Baja</p><p class="text-sm text-gray-500">Whole wheat tortilla, roast turkey, bacon, tomato, lettuce, avocado and ranch</p></div>
+              <div><p class="font-semibold text-gray-800">Goat Cheese</p><p class="text-sm text-gray-500">Whole wheat tortilla, chicken, spinach, goat cheese, avocado and balsamic</p></div>
+              <div><p class="font-semibold text-gray-800">Sriracha Chicken</p><p class="text-sm text-gray-500">Flour tortilla, grilled chicken, tomato, lettuce, pepper jack, avocado and sriracha aioli</p></div>
+              <div><p class="font-semibold text-gray-800">Crispy Chicken</p><p class="text-sm text-gray-500">Flour tortilla, fried chicken breast, avocado, lettuce, tomato, cheddar, ranch</p></div>
+              <div><p class="font-semibold text-gray-800">Pesto Caprese</p><p class="text-sm text-gray-500">Whole wheat tortilla, spinach, tomato, fresh mozzarella, avocado, basil pesto and balsamic glaze</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HEALTHY AND GF -->
+      <div class="menu-category" id="tab-healthy">
+        <div class="relative rounded-2xl overflow-hidden mb-8 h-48 md:h-64">
+          <img src="assets/images/avocado_toast.jpg" alt="Healthy, Gluten Free and Vegan Options" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-sb-blue-dark/80 to-sb-blue-dark/30"></div>
+          <div class="absolute inset-0 flex items-center px-8">
+            <div><p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-1">Something for Everyone</p><h3 class="font-display text-3xl md:text-4xl font-bold text-white">Healthy, GF and Vegan</h3><p class="text-white/70 text-sm mt-2">Gluten-free pancakes, vegan scrambles, and wholesome options</p></div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-4">Gluten Free</h3>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">GF Ancient Grain French Toast</p><p class="text-sm text-gray-500">Gluten free ancient grain bread, topped with fresh strawberry and fresh banana</p></div>
+              <div><p class="font-semibold text-gray-800">GF Johnny Cakes</p><p class="text-sm text-gray-500">Southern classic corn meal and brown rice pancakes with fresh strawberry and banana</p></div>
+              <div><p class="font-semibold text-gray-800">GF Gluten Free Crepes</p><p class="text-sm text-gray-500">Add choice of fresh blueberry, strawberry, banana, or compote</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-4">Vegan</h3>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">V GF Vegan Salsa Scrambler</p><p class="text-sm text-gray-500">Seasoned tofu, jalapeno, onion, spinach, mushroom and black beans with house made salsa</p></div>
+              <div><p class="font-semibold text-gray-800">V Vegan Oatmeal Pancakes</p><p class="text-sm text-gray-500">Flour and oatmeal based pancakes with fresh banana and blueberry, served with agave syrup</p></div>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-4">Healthy</h3>
+            <div class="space-y-3">
+              <div><p class="font-semibold text-gray-800">Lo-Cal Scrambler</p><p class="text-sm text-gray-500">Egg whites, green pepper and mushroom with fruit and multigrain toast</p></div>
+              <div><p class="font-semibold text-gray-800">Avocado Toast</p><p class="text-sm text-gray-500">Avocado spread, corn, jalapeno, black beans and poached eggs with sriracha aioli on multigrain</p></div>
+              <div><p class="font-semibold text-gray-800">Best Bowl Oatmeal</p><p class="text-sm text-gray-500">Oatmeal with brown sugar, fresh strawberry and whipped cream</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDES -->
+      <div class="menu-category" id="tab-sides">
+        <div class="bg-white rounded-xl p-6 shadow-sm max-w-3xl mx-auto">
+          <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-4">Sides</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <p class="text-gray-700">Hash Browns</p><p class="text-gray-700">House Hash Browns</p><p class="text-gray-700">Corned Beef Hash</p>
+            <p class="text-gray-700">Fruit</p><p class="text-gray-700">Canadian Bacon</p><p class="text-gray-700">Ham off the Bone</p>
+            <p class="text-gray-700">Turkey Links</p><p class="text-gray-700">Sausage Links</p><p class="text-gray-700">Sausage Patties</p>
+            <p class="text-gray-700">Chicken Apple Cherry Links</p><p class="text-gray-700">Bacon</p><p class="text-gray-700">Fried Green Tomatoes</p>
+            <p class="text-gray-700">Bowl of Soup</p><p class="text-gray-700">Corn Bread</p><p class="text-gray-700">Fries</p>
+          </div>
+          <div class="mt-4 pt-4 border-t border-gray-100">
+            <p class="text-sm text-gray-500"><strong>Toast options:</strong> White, multigrain, Greek, sourdough, English muffin, raisin, rye, biscuit. Gluten-free (+$1)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center text-xs text-gray-400 space-y-1">
+        <p>*Consuming raw or undercooked meats, poultry, seafood, shellfish and eggs may increase your risk of foodborne illness.</p>
+        <p>Please inform your server of any allergies prior to ordering.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gaming -->
+  <section id="gaming" class="py-16 md:py-24 bg-sb-blue-dark text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-3">New at Carpentersville</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">Video Gaming Cafe</h2>
+        <p class="text-white/80 text-lg mb-8">Enjoy our gaming cafe featuring video gaming terminals right here at our Carpentersville location. Open daily after the restaurant closes.</p>
+        <div class="grid sm:grid-cols-2 gap-6 max-w-lg mx-auto">
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <p class="text-3xl font-display font-bold text-sb-gold mb-1">3-10 PM</p>
+            <p class="text-white/70 text-sm">Gaming Hours</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur rounded-xl p-6">
+            <p class="text-3xl font-display font-bold text-sb-gold mb-1">3-8 PM</p>
+            <p class="text-white/70 text-sm">Takeout and Delivery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section id="location" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-3">Find Us</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-sb-blue-dark">Location and Hours</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <div class="rounded-2xl overflow-hidden shadow-lg mb-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.5!2d-88.2573!3d42.1178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f0d5b5b5b5b5b%3A0x0!2s152+S+Western+Ave%2C+Carpentersville%2C+IL+60110!5e0!3m2!1sen!2sus!4v1"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Southern Belle's Pancake House location map"></iframe>
+          </div>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=152+S+Western+Ave+Carpentersville+IL+60110" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-sb-blue hover:bg-sb-blue-dark text-white px-6 py-3 rounded-full font-semibold transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            Get Directions
+          </a>
+        </div>
+        <div class="bg-sb-cream rounded-2xl p-8">
+          <h3 class="font-display text-2xl font-bold text-sb-blue-dark mb-6">Carpentersville</h3>
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-sb-blue/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-sb-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div><p class="font-semibold text-gray-800">Address</p><p class="text-gray-600">152 S. Western Ave<br>Carpentersville, IL 60110</p></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-sb-blue/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-sb-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div><p class="font-semibold text-gray-800">Phone</p><a href="tel:+12246999959" class="text-sb-blue hover:text-sb-blue-dark font-medium">(224) 699-9959</a></div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-sb-blue/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-sb-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-gray-800">Hours</p>
+                <div class="text-gray-600 text-sm space-y-1">
+                  <p><strong>Restaurant:</strong> 6:00 AM - 3:00 PM daily</p>
+                  <p><strong>Gaming Cafe:</strong> 3:00 PM - 10:00 PM daily</p>
+                  <p><strong>Evening Takeout/Delivery:</strong> 3:00 PM - 8:00 PM</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-sb-blue/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-5 h-5 text-sb-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <div><p class="font-semibold text-gray-800">Services</p><p class="text-gray-600 text-sm">Dine-in, Takeout, Delivery, Curbside Pickup, Patio Seating</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media -->
+  <section class="py-12 bg-sb-warm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-3">In the News</p>
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-sb-blue-dark">As Seen On TV</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <a href="https://wgntv.com/midday-news/lunchbreak-apple-pancakes/" target="_blank" rel="noopener" class="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition-shadow group">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/WGN9_logo.svg/200px-WGN9_logo.svg.png" alt="WGN 9 Chicago" class="h-12 mx-auto mb-3 opacity-80 group-hover:opacity-100 transition-opacity">
+          <p class="text-sb-blue-dark font-semibold">Lunchbreak: Apple Pancakes</p>
+          <p class="text-gray-400 text-xs mt-1">Watch the segment &rarr;</p>
+        </a>
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Fox_32_Chicago_logo.svg/200px-Fox_32_Chicago_logo.svg.png" alt="FOX 32 Chicago" class="h-12 mx-auto mb-3 opacity-80">
+          <p class="text-sb-blue-dark font-semibold">Breakfast Comfort Food</p>
+          <p class="text-gray-400 text-xs mt-1">Featured segment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-3">Get in Touch</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-sb-blue-dark">Contact Us</h2>
+      </div>
+      <div class="max-w-xl mx-auto text-center">
+        <a href="tel:+12246999959" class="inline-flex items-center gap-3 text-3xl md:text-4xl font-display font-bold text-sb-blue hover:text-sb-blue-dark transition-colors mb-6">(224) 699-9959</a>
+        <p class="text-gray-500 mb-8">Call us for reservations, catering inquiries, or to place a takeout order.</p>
+        <div class="flex items-center justify-center gap-6 mb-10">
+          <a href="https://www.facebook.com/southernbellescarpentersville" target="_blank" rel="noopener" aria-label="Facebook"
+             class="w-12 h-12 bg-sb-blue/10 hover:bg-sb-blue text-sb-blue hover:text-white rounded-full flex items-center justify-center transition-all">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/southernbellespancakes" target="_blank" rel="noopener" aria-label="Instagram"
+             class="w-12 h-12 bg-sb-blue/10 hover:bg-sb-blue text-sb-blue hover:text-white rounded-full flex items-center justify-center transition-all">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://x.com/SBPancakes" target="_blank" rel="noopener" aria-label="X (Twitter)"
+             class="w-12 h-12 bg-sb-blue/10 hover:bg-sb-blue text-sb-blue hover:text-white rounded-full flex items-center justify-center transition-all">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+        <div class="bg-sb-cream rounded-2xl p-8">
+          <h3 class="font-display text-xl font-bold text-sb-blue-dark mb-3">Catering Available</h3>
+          <p class="text-gray-600 mb-4">Let Southern Belle's cater your next meeting, event, party, or holiday.</p>
+          <a href="tel:+12246999959" class="inline-block bg-sb-blue hover:bg-sb-blue-dark text-white px-6 py-3 rounded-full font-semibold transition-colors">Call to Discuss Catering</a>
+        </div>
+        <p class="mt-8 text-sm text-gray-400">Interested in joining our team? <a href="https://southernbellespancakes.com/site/employment/" target="_blank" rel="noopener" class="text-sb-blue hover:underline">View open positions</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-sb-blue-dark text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <img src="assets/images/logo_wide.png" alt="Southern Belle's Pancake House" class="h-8 brightness-0 invert opacity-80">
+        <div class="text-center md:text-right">
+          <p class="text-white/50 text-sm">2026 Southern Belle's Pancake House - Carpentersville, IL</p>
+          <p class="text-white/30 text-xs mt-1">152 S. Western Ave, Carpentersville, IL 60110 | (224) 699-9959</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('nav-scrolled', window.scrollY > 50);
+    });
+
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    document.querySelectorAll('.menu-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.menu-tab').forEach(t => { t.classList.remove('active'); t.classList.add('text-gray-500'); });
+        tab.classList.add('active'); tab.classList.remove('text-gray-500');
+        document.querySelectorAll('.menu-category').forEach(cat => cat.classList.remove('active'));
+        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

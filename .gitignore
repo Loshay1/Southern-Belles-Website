@@ -1,0 +1,8 @@
+.DS_Store
+.playwright-mcp/
+.claude/
+upload_server.py
+*.pyc
+__pycache__/
+node_modules/
+.env
