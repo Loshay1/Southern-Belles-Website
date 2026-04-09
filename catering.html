@@ -56,31 +56,36 @@
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Catering Packages",
+      "name": "Catering Menu",
       "itemListElement": [
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "The Southern Rise",
-            "description": "BoNuts, fresh pastries, seasonal fruit, coffee and juice service for 10-30 guests"
-          }
+          "@type": "OfferCatalog",
+          "name": "Breakfast Catering",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Breakfast Sandwich", "description": "Choice of Multi-Grain or White Toast with Bacon, Ham, or Vegetarian"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Southern Belle Skillet", "description": "Shredded Potato with Ham, Bacon, Sausage, Onion, Green Pepper, Mozzarella & Eggs"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Garden Skillet", "description": "Shredded Potato with Zucchini, Mushroom, Spinach, Onion, Green Pepper, Tomato, Mozzarella & Eggs"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Hotlanta Skillet", "description": "Shredded Potato with Smoked Sausage, Chicken, Onion, Cheddar, Pepper Jack, Jalapeno & Eggs"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Spanish Skillet", "description": "Shredded Potato with Chicken Chorizo, Onion, Jalapeno, Tomato, Avocado, Pepper Jack & Eggs"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "The Debutante Skillet", "description": "Shredded Potato with Chicken Sausage, Kale, Mushroom, Part Skim Mozzarella & Eggs"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Buttermilk Pancakes", "description": "Dusted with Powdered Sugar, Served with Maple Syrup & Whipped Butter"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "French Toast", "description": "Dusted with Powdered Sugar, Served with Maple Syrup & Whipped Butter"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Biscuits & Gravy", "description": "Country Style Biscuits Topped with Sausage Gravy"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "BO-NUTS", "description": "Fried Biscuit Donuts Tossed in Cinnamon Sugar with Blueberry Mascarpone & Chocolate"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Southern Belle's Big Breakfast", "description": "Eggs, Hash Browns, Bacon, Sausage, Toast or Pancakes with Whipped Butter & Jam — $13.99 per person"}}
+          ]
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "The Full Belle Spread",
-            "description": "Pancakes, scrambled eggs, bacon, sausage, hashbrowns, biscuits, BoNuts for 20-60 guests"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom Event Catering",
-            "description": "Fully customized menu for large events, weddings, and corporate functions for 50+ guests"
-          }
+          "@type": "OfferCatalog",
+          "name": "Lunch Catering",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Blackened Chicken Salad", "description": "Mixed Greens, Blackened Chicken, Green Peppers, Bacon, Tomato, Avocado & Bleu Cheese Dressing"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Tex Mex Salad", "description": "Mixed Greens, Grilled Chicken, Black Beans, Grilled Corn, Tomato, Grilled Jalapeno & Ranch Dressing"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Sugared Pecan Salad", "description": "Mixed Greens, Grilled Chicken, House-Made Sugared Pecans, Avocado, Bacon, Cheddar & Honey Dijon Dressing"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Siracha Chicken Wrap", "description": "Flour Tortilla, Grilled Chicken, Avocado, Tomato, Lettuce, Pepper Jack & Siracha Aioli with House-Made Potato Chips"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Baja Wrap", "description": "Whole Wheat Tortilla, Smoked Turkey, Bacon, Tomato, Lettuce, Avocado & Ranch Dressing with House-Made Potato Chips"}},
+            {"@type": "Offer", "itemOffered": {"@type": "MenuItem", "name": "Deli Party Platter", "description": "Turkey, Ham, Tuna Salad, Chicken Salad & Veggie Mini Sandwiches with House-Made Potato Chips & Assorted Cookies — $13.99 per person"}}
+          ]
         }
       ]
     },
@@ -110,7 +115,7 @@
         "name": "What is the minimum order for catering?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We cater for groups of 10 or more. Our packages start at $12 per person and scale based on your menu selections and group size."
+          "text": "Our Half Pans serve 7-9 guests and Full Pans serve 12-15 guests, with prices starting at $49.99 per pan. We also offer per-person options like the Big Breakfast ($13.99/person) and Deli Party Platter ($13.99/person)."
         }
       },
       {
@@ -211,7 +216,7 @@
         <div class="hidden lg:flex items-center gap-6">
           <a href="index.html" class="text-white/80 hover:text-white text-sm font-medium transition-colors">Home</a>
           <a href="index.html#menu" class="text-white/80 hover:text-white text-sm font-medium transition-colors">Menu</a>
-          <a href="#packages" class="text-white/80 hover:text-white text-sm font-medium transition-colors">Packages</a>
+          <a href="#menu" class="text-white/80 hover:text-white text-sm font-medium transition-colors">Menu</a>
           <a href="#how-it-works" class="text-white/80 hover:text-white text-sm font-medium transition-colors">How It Works</a>
           <a href="#faq" class="text-white/80 hover:text-white text-sm font-medium transition-colors">FAQ</a>
           <a href="#quote" class="bg-sb-gold hover:bg-yellow-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors shadow-lg">
@@ -229,7 +234,7 @@
       <div class="px-4 py-4 space-y-2">
         <a href="index.html" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Home</a>
         <a href="index.html#menu" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Full Menu</a>
-        <a href="#packages" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Packages</a>
+        <a href="#menu" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">Menu</a>
         <a href="#how-it-works" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">How It Works</a>
         <a href="#faq" class="block py-2 text-white/90 hover:text-white font-medium mobile-nav-link">FAQ</a>
         <a href="#quote" class="block text-center bg-sb-gold hover:bg-yellow-600 text-white px-5 py-3 rounded-full font-semibold mt-3 mobile-nav-link">
@@ -403,153 +408,262 @@
     </div>
   </section>
 
-  <!-- Catering Packages -->
-  <section id="packages" class="py-16 md:py-24 bg-sb-cream">
+  <!-- Catering Menu -->
+  <section id="menu" class="py-16 md:py-24 bg-sb-cream">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-3">Catering Packages</p>
-        <h2 class="font-display text-3xl md:text-4xl font-bold text-sb-blue-dark mb-4">Choose Your Spread</h2>
-        <p class="text-gray-500 max-w-2xl mx-auto">Start with a package, or build your own custom menu. Prices vary by group size and selections — we'll work with your budget.</p>
+        <p class="text-sb-gold font-semibold text-sm tracking-widest uppercase mb-3">Our Catering Menu</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold text-sb-blue-dark mb-4">Breakfast &amp; Lunch Catering</h2>
+        <p class="text-gray-500 max-w-2xl mx-auto">Order by the pan or per person. Half Pan serves 7-9 guests, Full Pan serves 12-15 guests. All items made from scratch.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
-        <!-- Package 1 -->
-        <div class="package-card bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-          <div class="relative h-48">
-            <img src="assets/images/bonuts.jpg" alt="The Southern Rise continental breakfast package" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-sb-blue-dark/80 to-transparent"></div>
-            <div class="absolute bottom-4 left-5 right-5">
-              <p class="text-white/70 text-xs font-medium tracking-wider uppercase">Package 1</p>
-              <h3 class="font-display text-2xl font-bold text-white">The Southern Rise</h3>
-            </div>
-          </div>
-          <div class="p-6">
-            <div class="flex items-baseline gap-2 mb-1">
-              <span class="text-sm text-gray-400">Starting at</span>
-              <span class="text-2xl font-bold text-sb-blue-dark">$12</span>
-              <span class="text-sm text-gray-400">/ person</span>
-            </div>
-            <p class="text-xs text-gray-400 mb-5">10-30 guests</p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Signature BoNuts with mascarpone &amp; chocolate</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Fresh baked muffins &amp; pastries</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Seasonal fresh fruit platter</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Coffee &amp; juice service</span>
-              </li>
-            </ul>
-            <a href="#quote" class="block w-full text-center bg-sb-blue-light text-sb-blue-dark hover:bg-sb-blue hover:text-white px-6 py-3 rounded-full font-semibold transition-all text-sm">
-              Get a Quote
-            </a>
-          </div>
+      <!-- Pan size legend -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100 text-sm">
+          <span class="w-2 h-2 bg-sb-blue rounded-full"></span>
+          <span class="text-gray-500"><strong class="text-sb-blue-dark">Half Pan</strong> &mdash; 7-9 Guests</span>
         </div>
-
-        <!-- Package 2 (Featured) -->
-        <div class="package-card bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-sb-gold/30 ring-4 ring-sb-gold/10 relative">
-          <div class="absolute top-4 right-4 z-10 bg-sb-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
-          <div class="relative h-48">
-            <img src="assets/images/pancakes.jpg" alt="The Full Belle Spread brunch catering package" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-sb-blue-dark/80 to-transparent"></div>
-            <div class="absolute bottom-4 left-5 right-5">
-              <p class="text-white/70 text-xs font-medium tracking-wider uppercase">Package 2</p>
-              <h3 class="font-display text-2xl font-bold text-white">The Full Belle Spread</h3>
-            </div>
-          </div>
-          <div class="p-6">
-            <div class="flex items-baseline gap-2 mb-1">
-              <span class="text-sm text-gray-400">Starting at</span>
-              <span class="text-2xl font-bold text-sb-blue-dark">$18</span>
-              <span class="text-sm text-gray-400">/ person</span>
-            </div>
-            <p class="text-xs text-gray-400 mb-5">20-60 guests</p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Buttermilk pancakes &amp; French toast</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Scrambled eggs &amp; hash browns</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Bacon, sausage links &amp; biscuits</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Signature BoNuts</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Fresh fruit, coffee &amp; juice</span>
-              </li>
-            </ul>
-            <a href="#quote" class="block w-full text-center bg-sb-gold hover:bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold transition-all text-sm shadow-md">
-              Get a Quote
-            </a>
-          </div>
-        </div>
-
-        <!-- Package 3 -->
-        <div class="package-card bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-          <div class="relative h-48">
-            <img src="assets/images/skillet.jpg" alt="Custom event catering with skillets and full spreads" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-sb-blue-dark/80 to-transparent"></div>
-            <div class="absolute bottom-4 left-5 right-5">
-              <p class="text-white/70 text-xs font-medium tracking-wider uppercase">Package 3</p>
-              <h3 class="font-display text-2xl font-bold text-white">Custom Event</h3>
-            </div>
-          </div>
-          <div class="p-6">
-            <div class="flex items-baseline gap-2 mb-1">
-              <span class="text-2xl font-bold text-sb-blue-dark">Custom</span>
-              <span class="text-sm text-gray-400">pricing</span>
-            </div>
-            <p class="text-xs text-gray-400 mb-5">50+ guests</p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Fully customized menu from 80+ items</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Skillets, benedicts, crepes &amp; more</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">GF, vegetarian &amp; vegan accommodations</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-sb-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                <span class="text-sm text-gray-600">Dedicated planning &amp; coordination</span>
-              </li>
-            </ul>
-            <a href="#quote" class="block w-full text-center bg-sb-blue-light text-sb-blue-dark hover:bg-sb-blue hover:text-white px-6 py-3 rounded-full font-semibold transition-all text-sm">
-              Request Custom Quote
-            </a>
-          </div>
+        <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100 text-sm">
+          <span class="w-2 h-2 bg-sb-gold rounded-full"></span>
+          <span class="text-gray-500"><strong class="text-sb-blue-dark">Full Pan</strong> &mdash; 12-15 Guests</span>
         </div>
       </div>
 
-      <div class="text-center mt-8">
+      <!-- ═══ BREAKFAST ═══ -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-12 h-12 bg-sb-gold/15 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-sb-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3 class="font-display text-2xl md:text-3xl font-bold text-sb-blue-dark">Breakfast</h3>
+        </div>
+
+        <!-- Skillets & Sandwiches -->
+        <p class="text-sm font-semibold text-sb-gold tracking-widest uppercase mb-4">Skillets &amp; Sandwiches</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Breakfast Sandwich</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Choice of Multi-Grain or White Toast. Choice of Bacon, Ham, or Vegetarian</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$59.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Southern Belle Skillet</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Layered with Shredded Potato, Ham, Bacon, Sausage, Onion, Green Pepper, Topped with Mozzarella &amp; Eggs</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$59.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Garden Skillet</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Layered with Shredded Potato, Zucchini, Mushroom, Spinach, Onion, Green Pepper, Tomato, Topped with Mozzarella &amp; Eggs</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$59.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Hotlanta Skillet</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Layered with Shredded Potato, Smoked Sausage, Chicken, Onion, Cheddar, Pepper Jack, Jalape&ntilde;o &amp; Eggs</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$59.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Spanish Skillet</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Layered with Shredded Potato, Chicken Chorizo, Onion, Jalape&ntilde;o, Tomato, Avocado, Topped with Pepper Jack &amp; Eggs</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$69.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$99.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">&ldquo;The Debutante&rdquo; Skillet</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Layered with Shredded Potato, Chicken Sausage, Kale, Mushroom, Part Skim Mozzarella &amp; Eggs</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$79.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- From the Griddle -->
+        <p class="text-sm font-semibold text-sb-gold tracking-widest uppercase mb-4">From the Griddle</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Buttermilk Pancakes</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Dusted with Powdered Sugar, Served with Maple Syrup &amp; Whipped Butter</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$49.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$79.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">French Toast</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Dusted with Powdered Sugar, Served with Maple Syrup &amp; Whipped Butter</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$49.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$79.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Biscuits &amp; Gravy</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Country Style Biscuits Topped with Sausage Gravy</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$49.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$69.99</span></span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Extras & Add-Ons -->
+        <p class="text-sm font-semibold text-sb-gold tracking-widest uppercase mb-4">Extras &amp; Add-Ons</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <div class="inline-block bg-sb-gold/10 text-sb-gold text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wider mb-2">Fan Favorite</div>
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">BO-NUTS</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Fried Biscuit Donuts Tossed in Cinnamon Sugar, with Blueberry Mascarpone &amp; Chocolate</p>
+            <div class="flex gap-3 text-sm border-t border-gray-50 pt-3 flex-wrap">
+              <span class="text-gray-400">12pc <span class="font-semibold text-sb-blue-dark">$11</span></span>
+              <span class="text-gray-400">24pc <span class="font-semibold text-sb-blue-dark">$22</span></span>
+              <span class="text-gray-400">36pc <span class="font-semibold text-sb-blue-dark">$33</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">BIG Basket of Biscuits</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">(8) Served with Apple Butter, Honey Butter &amp; Jam</p>
+            <div class="text-sm border-t border-gray-50 pt-3">
+              <span class="font-semibold text-sb-blue-dark">$28.99</span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Red Eye Coffee</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">96 oz. &mdash; Perfect for groups</p>
+            <div class="text-sm border-t border-gray-50 pt-3">
+              <span class="font-semibold text-sb-blue-dark">$23.99</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Big Breakfast Feature -->
+        <div class="bg-gradient-to-r from-sb-blue-dark to-sb-blue-dark/90 rounded-2xl p-6 md:p-8 text-white flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <h4 class="font-display text-xl md:text-2xl font-bold mb-1">Southern Belle&rsquo;s Big Breakfast</h4>
+            <p class="text-white/70 text-sm">Includes Eggs, Hash Browns, Bacon, Sausage, Toast or Pancakes, with Whipped Butter &amp; Jam</p>
+          </div>
+          <div class="flex items-baseline gap-1 flex-shrink-0">
+            <span class="font-display text-3xl font-bold text-sb-gold-light">$13.99</span>
+            <span class="text-white/60 text-sm">/ person</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ LUNCH ═══ -->
+      <div>
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-12 h-12 bg-sb-gold/15 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-sb-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-display text-2xl md:text-3xl font-bold text-sb-blue-dark">Lunch</h3>
+        </div>
+
+        <!-- Salads -->
+        <p class="text-sm font-semibold text-sb-gold tracking-widest uppercase mb-4">Salads</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Blackened Chicken Salad</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Mixed Greens, Blackened Chicken, Green Peppers, Bacon, Tomato, Avocado &amp; Bleu Cheese Dressing</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$49.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Tex Mex Salad</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Mixed Greens, Grilled Chicken, Black Beans, Grilled Corn, Tomato, Grilled Jalape&ntilde;o &amp; Ranch Dressing</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$49.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Sugared Pecan Salad</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Mixed Greens, Grilled Chicken, House-Made Sugared Pecans, Avocado, Bacon, Cheddar &amp; Honey Dijon Dressing</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">Half <span class="font-semibold text-sb-blue-dark">$49.99</span></span>
+              <span class="text-gray-400">Full <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Wraps -->
+        <p class="text-sm font-semibold text-sb-gold tracking-widest uppercase mb-4">Wraps</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Siracha Chicken Wrap</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Flour Tortilla, Grilled Chicken, Avocado, Tomato, Lettuce, Pepper Jack &amp; Siracha Aioli. Served with House-Made Potato Chips</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">&frac12; Dozen <span class="font-semibold text-sb-blue-dark">$49.99</span></span>
+              <span class="text-gray-400">Dozen <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+            <h4 class="font-semibold text-sb-blue-dark mb-1.5">Baja Wrap</h4>
+            <p class="text-gray-500 text-sm leading-relaxed mb-3">Whole Wheat Tortilla, Smoked Turkey, Bacon, Tomato, Lettuce, Avocado &amp; Ranch Dressing. Served with House-Made Potato Chips</p>
+            <div class="flex gap-4 text-sm border-t border-gray-50 pt-3">
+              <span class="text-gray-400">&frac12; Dozen <span class="font-semibold text-sb-blue-dark">$49.99</span></span>
+              <span class="text-gray-400">Dozen <span class="font-semibold text-sb-blue-dark">$89.99</span></span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Deli Platter Feature -->
+        <div class="bg-gradient-to-r from-sb-blue-dark to-sb-blue-dark/90 rounded-2xl p-6 md:p-8 text-white flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <h4 class="font-display text-xl md:text-2xl font-bold mb-1">Deli Party Platter</h4>
+            <p class="text-white/70 text-sm">Includes Turkey, Ham, Tuna Salad, Chicken Salad &amp; Veggie Mini Sandwiches. Served with House-Made Potato Chips &amp; Assorted Cookies</p>
+          </div>
+          <div class="flex items-baseline gap-1 flex-shrink-0">
+            <span class="font-display text-3xl font-bold text-sb-gold-light">$13.99</span>
+            <span class="text-white/60 text-sm">/ person</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
         <a href="Southern-Belle-Menu-WEB_0425.pdf" target="_blank" class="inline-flex items-center gap-2 text-sb-blue hover:text-sb-blue-dark text-sm font-medium underline underline-offset-4 transition-colors">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          Download our full menu (PDF)
+          Download our full dine-in menu (PDF)
         </a>
       </div>
     </div>
   </section>
-
   <!-- Food Gallery -->
   <section class="py-16 md:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -845,7 +959,7 @@
             <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer px-6 pb-5">
-            <p class="text-gray-500 text-sm leading-relaxed">We cater for groups of 10 or more. Our packages start at $12 per person and scale based on your menu selections and group size. For smaller groups, consider placing a large takeout order through our regular online ordering system.</p>
+            <p class="text-gray-500 text-sm leading-relaxed">Our Half Pans serve 7-9 guests and Full Pans serve 12-15 guests, with prices starting at $49.99 per pan. We also offer per-person options like the Big Breakfast ($13.99/person) and Deli Party Platter ($13.99/person). For smaller groups, consider placing a large takeout order through our regular online ordering system.</p>
           </div>
         </div>
 
